@@ -44,7 +44,7 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: False
+rss_icon: true
 
 # -----------------------------------------------------------------------------
 # Layout
@@ -278,7 +278,8 @@ scholar:
 
   style: apa
   locale: en
-
+  sort_by: year
+  order: descending
   source: /_bibliography/
   bibliography: papers.bib
   bibliography_template: bib
