@@ -5,4 +5,5 @@ github_repos:
   - Alexyskoutnev/Quadruped-Trajectory-Optimization-Stack
   - Alexyskoutnev/SOLO12_SDK
   - Alexyskoutnev/SLAM-RRT-Navigation-Stack
+  # - lainelab/Air_Hockey_Challenge_Laine
   - Alexyskoutnev/towr_solo12
