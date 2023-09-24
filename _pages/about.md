@@ -1,26 +1,26 @@
 ---
 layout: about
-title: about
+title: home
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Moto. Etc.
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  address: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image: self.jpg
 
-news: true  # includes a list of news items
-latest_posts: true  # includes a list of the newest posts
+news: false  # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am currently a second-year CS Ph.D. student at Vanderbilt University, under the guidance of [Prof. Forrest Laine](https://engineering.vanderbilt.edu/bio/forrest-laine). My research primarily revolves around deep learning, optimization, and robotics. Before embarking on my journey at Vanderbilt, I completed my bachelor's degree in Mathematics and Mechanical Engineering at UT Austin. During my time there, I had the privilege of conducting research under the mentorship of [Prof. Yuke Zhu](https://www.cs.utexas.edu/~yukez/) and [Prof. Kevin Clarno](https://www.me.utexas.edu/people/faculty-directory/clarno).
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+## Software
+
+{% if site.data.repositories.github_repos %}
+<div class="repositories d-flex flex-wrap flex-md-row flex-column justify-content-between align-items-center">
+  {% for repo in site.data.repositories.github_repos %}
+    {% include repository/repo.html repository=repo %}
+  {% endfor %}
+</div>
+{% endif %}
